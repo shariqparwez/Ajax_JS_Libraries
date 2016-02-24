@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Execution Order</title>
+<script type="text/javascript" src="jslibs/jquery-1.12.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("h1").css("color","blue");
+		$("#detail").css("font-size","1.3em");
+		$("ul>li").css("color","red");
+		$("img").on('click',function(){
+			alert("DONT CLICK ON ME");
+		})
+	});
+
+
+</script>
+</head>
+<body>
+	<h1>jQuery Examples</h1>
+	<h3 id="detail">Ajax Calls</h3>
+	
+	<ul>
+		<li>UML</li>
+		<li>OOAD</li>
+		<li>RDBMS</li>
+		<li>ANT &amp; Log4j</li>
+		<li>Design Patterns</li>
+	</ul>
+	<img src="images/Grapes.png" alt="Grapes">
+</body>
+</html>
